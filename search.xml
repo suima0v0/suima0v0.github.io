@@ -1,36 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2017/07/11/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> text </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> text </tag>
-            
-        </tags>
-        
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[少年守志说]]></title>
+    <url>%2F2017%2F07%2F12%2F%E5%B0%91%E5%B9%B4%E5%AE%88%E5%BF%97%E8%AF%B4%2F</url>
+    <content type="text"><![CDATA[守志如填海，未见其满而日有所满；辍志如易途，日有所行而未见其远。然时之少年，辍志者众，守志者寡。人是如此，国何以堪！逢五四之佳节，得总理之劝语，概时下之短志，寄文章以励子。 少年守志，曦升碧瑶之霄；中年守志，日受骄云之蔽；老年守志，夕落东去之江。夫少年者，其心也万壑，其力也金刚，其智也灵狐，其气也长江。少不守志，更待何时？ 然，心怀万壑则易好高骛远；力赛金刚则易不分放矢；智比灵狐则易恃才傲物；气若长江则易不拘礼节。是故少年常立志者众，立长志者寡。少年守志者，心虽高而专一，力虽沛而有度，智虽明而谦逊，气虽浩而收敛。 年少则利于耐守志之艰难，守志则利于改年少之浮夸。年少守志，不亦齐美乎？ 然守志非易事。 伴山脚仰其入云而未见其顶！能不骇而却步？攀山腰水囊已空而未见溪泉，能不疲而止步？爬山颈寂寥已久而未见人影，能不忧而停步？守志难，难于上青天。伟长十八学理，八十寒暑挑灯苦读；自清十二成文，二十春秋独自笔耕。嵇康恨而绝交，文举固而拒曹，鹏举愤而雪耻，渊明适而归田。孔丘贫教，史迁辱书。洛神之绣虎，彦和之雕龙；晋士特奇，可比一斑之豹；唐儒博识，堪比五总之龟。 其山虽高，登其峰者未见其少；人虽非少，登峰之径未见其顺。此等人也，年少而起，耄耋而不惜。仰其峰高，骇而不弃！耐其水枯，累而不弃！苦其寂寞，忧而不弃！守志非易事，其长，苦，寂，无边，无路，无止，唯守一字，方能克之。 少年守志则国生根，愈根深而蒂固；少年辍志则国弃羽，欲高飞而无力。昔李斯《逐客书》道河海不择细流，故能成其果；今启超《少年说》道少年强则国强，少年富则国富。吾之最高志乃国之志，吾守志后方能成国志。成国志者，非主席，非总理，少年也。 少年者，当以披荆斩棘无所惧怕之勇，隳山碎岩所向披靡之力，熊咆虎啸龙吟凤鸣之势，甘受疾苦永不言弃之心，守乘风破浪驰骋天下之志，守修身齐家淡泊名利之志，守治国安国富国强国之志！ 二〇一一年于顺德一中]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>文章</tag>
+      </tags>
+  </entry>
 </search>
