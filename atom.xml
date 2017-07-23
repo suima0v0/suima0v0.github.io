@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-16T10:28:09.234Z</updated>
+  <updated>2017-07-23T05:18:07.179Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>(译)Kotlin Future Features Survey Results</title>
+    <link href="http://yoursite.com/2017/07/23/(%E8%AF%91)Kotlin%20Future%20Features%20Survey%20Results/"/>
+    <id>http://yoursite.com/2017/07/23/(译)Kotlin Future Features Survey Results/</id>
+    <published>2017-07-23T04:42:52.125Z</published>
+    <updated>2017-07-23T05:18:07.179Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="suima0v0.github.io">睡魔的倦意</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/</a></p>
+</blockquote>
+<p>最近令人激动的事情层出不穷，我们不得不怀着抱歉的心情推迟公布Future Features Survey的结果。但迟到总比不到要好，本博客总结了我们在调查中获知的内容。</p>
+<p>总的来说，<a href="https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-event-report/" target="_blank" rel="external">Future Features Survey</a>从四月份开始，一共收到约850份答复。在此我们要感谢所有参与者！</p>
+<h1 id="调查结果"><a href="#调查结果" class="headerlink" title="调查结果"></a>调查结果</h1><p>原始的统计数据（匿名）可在<a href="https://docs.google.com/spreadsheets/d/1eyhyrJPsNWrM6dYqchQzjNs41AQKjz9Xb_WB-zdy8To/edit" target="_blank" rel="external">这里</a>获得。</p>
+<p>我们的议题有二：</p>
+<ul>
+<li><p>提名三个最受你期待的特性</p>
+</li>
+<li><p>提出一项你认为不需要的特性（可选）</p>
+<a id="more"></a>
+</li>
+</ul>
+<p>你可以在<a href="https://drive.google.com/file/d/0BwAovUlww0CmVmNQTXd4TTdKYUU/view" target="_blank" rel="external">这里</a>查看提名features的名单。</p>
+<p>我们总共收到852份答复（某些是白卷），其中大多数人都用完了3个实用特性的提名名额，而约有300多人放弃了对不受欢迎特性的提名。</p>
+<p>这是汇总的结果（按受欢迎程度排名）：</p>
+
+<p><iframe frameborder="0" height="637" scrolling="no" seamless src="https://docs.google.com/spreadsheets/d/1eyhyrJPsNWrM6dYqchQzjNs41AQKjz9Xb_WB-zdy8To/pubchart?oid=2077021838&amp;format=interactive" width="790"></iframe></p>
+
+
+<p><span id="more-5025"></span></p>
+
+<p>由上图可知，最受欢迎特性的依次为：“Collection literals”, “SAM conversions for Kotlin interfaces”与“Truly immutable data”</p>
+<p>而“Private members accessible from tests”似乎最具争议，108票赞同与120票反对。这可以理解，毕竟可测试性设计是被广泛认可的惯例。</p>
+<p>但我对“Overloadable operators | and &amp;”的提名结果感到些许困惑，有46票赞成与50票反对，而我看不出这个特性所带来的任何坏处，请在文章评论区分享你这样选择的原因。</p>
+<p>这是最不受欢迎特性的排名：</p>
+
+<p><iframe frameborder="0" height="483.5" scrolling="no" seamless src="https://docs.google.com/spreadsheets/d/1eyhyrJPsNWrM6dYqchQzjNs41AQKjz9Xb_WB-zdy8To/pubchart?oid=346107453&amp;format=interactive" width="933"></iframe></p>
+
+<p>需要说明的是，“Optional commas”和“Optional trailing commas”本应是两个选项，我们错误地把他们放在了同一个feature中，所以引起了难以解读的结果。</p>
+<p>另外我们还忘了在调查中添加“Ternary conditional operator”，在我意识到的时候已经太晚了，很抱歉各位。我们已经明白这个功能会有很大需求，会持续进行研究的。</p>
+<p>但最奇怪的是，这次调查的结果与在Kotlin 1.1发布会中进行的调查截然不同：</p>
+
+<p><iframe frameborder="0" height="580" scrolling="no" seamless src="https://docs.google.com/spreadsheets/d/1gR1C69Rcmv2szbQJ-mXrhW7KtU4tPSya93Xq9sfE8Y0/pubchart?oid=2043595044&amp;format=interactive" width="1034"></iframe></p>
+
+<p>我怀疑是人们看了上次投票后产生了某些偏见，但这很难确定，也可能是另外的因素，例如线下与线上的参与者本身就具有很大的差异性。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>已明确方向的三个特性是：</p>
+<ul>
+<li>Collection literals</li>
+<li>SAM conversions for Kotlin interfaces</li>
+<li>Truly immutable data</li>
+</ul>
+<p>相比之下其余的features只收到了较少的投票。Truly immutable data饱受期待，但真的很难实现，这里我们没法给予承诺。而另外两项在不久的将来都可以实现，multi-catch看起来也不错。总而言之，我们将在工作计划中重视这次调查的结果。</p>
+<p>免责声明：如上所述，我们并没有承诺在特定的时间内完成任何这些功能。我们很关心用户需要什么，但不能预先承诺任何东西。因为在知道这些功能是否确切（并且优雅地）适合这种语言之前，我们都需要进行慎重的设计工作。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;译者：&lt;a href=&quot;https://pye52.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;团子吃蛋挞&lt;/a&gt;&amp;amp;&lt;a href=&quot;suima0v0.github.io&quot;&gt;睡魔的倦意&lt;/a&gt;&lt;br&gt;源地址：&lt;a href=&quot;https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近令人激动的事情层出不穷，我们不得不怀着抱歉的心情推迟公布Future Features Survey的结果。但迟到总比不到要好，本博客总结了我们在调查中获知的内容。&lt;/p&gt;
+&lt;p&gt;总的来说，&lt;a href=&quot;https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-event-report/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Future Features Survey&lt;/a&gt;从四月份开始，一共收到约850份答复。在此我们要感谢所有参与者！&lt;/p&gt;
+&lt;h1 id=&quot;调查结果&quot;&gt;&lt;a href=&quot;#调查结果&quot; class=&quot;headerlink&quot; title=&quot;调查结果&quot;&gt;&lt;/a&gt;调查结果&lt;/h1&gt;&lt;p&gt;原始的统计数据（匿名）可在&lt;a href=&quot;https://docs.google.com/spreadsheets/d/1eyhyrJPsNWrM6dYqchQzjNs41AQKjz9Xb_WB-zdy8To/edit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;获得。&lt;/p&gt;
+&lt;p&gt;我们的议题有二：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;提名三个最受你期待的特性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提出一项你认为不需要的特性（可选）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="kotlin" scheme="http://yoursite.com/categories/kotlin/"/>
+    
+    
+      <category term="kotlin" scheme="http://yoursite.com/tags/kotlin/"/>
+    
+      <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+  </entry>
   
   <entry>
     <title>夏の音：ギタとひぐらしと少女のうた</title>
