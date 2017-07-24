@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[(译)KotlinConf – Speaker List Announced]]></title>
+    <url>%2F2017%2F07%2F24%2F(%E8%AF%91)KotlinConf%20-%20Speaker%20List%20Announced%2F</url>
+    <content type="text"><![CDATA[译者：团子吃蛋挞&amp;睡魔的倦意源地址：https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/ 仍未到11月吗？ 距离KotlinConf 2017只剩100多天了，我们在此非常激动地宣布我们邀请了48位十分出色的讲师发表演说！能有这样优秀的嘉宾与公司团队代表Kotlin社区，我感到非常兴奋。 一般抢先票在首轮抢先注册活动之后也已经售罄了，普通门票尚在发售中，售完即止。如果你想参加KotlinConf，也请马上注册吧，否则你将错失机会。 温馨提示，KotlinConf将于11月2-3日在美丽的加利福尼亚州旧金山27码头举行。届时JetBrains团队和充满激情的社区讲师将分享他们关于Kotlin的知识，经验和理念。 为期两天的学习，交流会与更多的乐趣在等待着你。立刻注册吧！ 我们期待着在今秋的旧金山与你相见！]]></content>
+      <categories>
+        <category>kotlin</category>
+      </categories>
+      <tags>
+        <tag>kotlin</tag>
+        <tag>翻译</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[(译)Kotlin Future Features Survey Results]]></title>
     <url>%2F2017%2F07%2F23%2F(%E8%AF%91)Kotlin%20Future%20Features%20Survey%20Results%2F</url>
     <content type="text"><![CDATA[译者：团子吃蛋挞&amp;睡魔的倦意源地址：https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/ 最近令人激动的事情层出不穷，我们不得不怀着抱歉的心情推迟公布Future Features Survey的结果。但迟到总比不到要好，本博客总结了我们在调查中获知的内容。 总的来说，Future Features Survey从四月份开始，一共收到约850份答复。在此我们要感谢所有参与者！ 调查结果原始的统计数据（匿名）可在这里获得。 我们的议题有二： 提名三个最受你期待的特性 提出一项你认为不需要的特性（可选） 你可以在这里查看提名features的名单。 我们总共收到852份答复（某些是白卷），其中大多数人都用完了3个实用特性的提名名额，而约有300多人放弃了对不受欢迎特性的提名。 这是汇总的结果（按受欢迎程度排名）： 由上图可知，最受欢迎特性的依次为：“Collection literals”, “SAM conversions for Kotlin interfaces”与“Truly immutable data” 而“Private members accessible from tests”似乎最具争议，108票赞同与120票反对。这可以理解，毕竟可测试性设计是被广泛认可的惯例。 但我对“Overloadable operators | and &amp;”的提名结果感到些许困惑，有46票赞成与50票反对，而我看不出这个特性所带来的任何坏处，请在文章评论区分享你这样选择的原因。 这是最不受欢迎特性的排名： 需要说明的是，“Optional commas”和“Optional trailing commas”本应是两个选项，我们错误地把他们放在了同一个feature中，所以引起了难以解读的结果。 另外我们还忘了在调查中添加“Ternary conditional operator”，在我意识到的时候已经太晚了，很抱歉各位。我们已经明白这个功能会有很大需求，会持续进行研究的。 但最奇怪的是，这次调查的结果与在Kotlin 1.1发布会中进行的调查截然不同： 我怀疑是人们看了上次投票后产生了某些偏见，但这很难确定，也可能是另外的因素，例如线下与线上的参与者本身就具有很大的差异性。 结论已明确方向的三个特性是： Collection literals SAM conversions for Kotlin interfaces Truly immutable data 相比之下其余的features只收到了较少的投票。Truly immutable data饱受期待，但真的很难实现，这里我们没法给予承诺。而另外两项在不久的将来都可以实现，multi-catch看起来也不错。总而言之，我们将在工作计划中重视这次调查的结果。 免责声明：如上所述，我们并没有承诺在特定的时间内完成任何这些功能。我们很关心用户需要什么，但不能预先承诺任何东西。因为在知道这些功能是否确切（并且优雅地）适合这种语言之前，我们都需要进行慎重的设计工作。]]></content>

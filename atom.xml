@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-23T05:18:07.179Z</updated>
+  <updated>2017-07-24T12:55:59.192Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>(译)KotlinConf – Speaker List Announced</title>
+    <link href="http://yoursite.com/2017/07/24/(%E8%AF%91)KotlinConf%20-%20Speaker%20List%20Announced/"/>
+    <id>http://yoursite.com/2017/07/24/(译)KotlinConf - Speaker List Announced/</id>
+    <published>2017-07-24T12:52:27.720Z</published>
+    <updated>2017-07-24T12:55:59.192Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="suima0v0.github.io">睡魔的倦意</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/</a></p>
+</blockquote>
+<p>仍未到11月吗？</p>
+<p>距离KotlinConf 2017只剩100多天了，我们在此非常激动地宣布我们邀请了<a href="https://kotlinconf.com/speakers/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">48位十分出色的讲师</a>发表演说！能有这样优秀的嘉宾与公司团队代表Kotlin社区，我感到非常兴奋。</p>
+
+<p><a href="https://kotlinconf.com/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external"><img alt="KotlinConf" class="aligncenter size-full wp-image-5123" height="354" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/07/kc.png" width="940"></a></p>
+
+
+<p><span id="more-5121"></span></p>
+
+<a id="more"></a>
+<p>一般抢先票在首轮抢先注册活动之后也已经售罄了，普通门票尚在发售中，售完即止。如果你想参加KotlinConf，也请<a href="https://kotlinconf.com/registration/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">马上注册</a>吧，否则你将错失机会。</p>
+<p>温馨提示，KotlinConf将于11月2-3日在美丽的加利福尼亚州旧金山27码头举行。届时JetBrains团队和充满激情的社区讲师将分享他们关于Kotlin的知识，经验和理念。</p>
+<p>为期两天的学习，交流会与更多的乐趣在等待着你。<a href="https://kotlinconf.com/registration/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">立刻注册吧</a>！</p>
+<p>我们期待着在今秋的旧金山与你相见！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;译者：&lt;a href=&quot;https://pye52.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;团子吃蛋挞&lt;/a&gt;&amp;amp;&lt;a href=&quot;suima0v0.github.io&quot;&gt;睡魔的倦意&lt;/a&gt;&lt;br&gt;源地址：&lt;a href=&quot;https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;仍未到11月吗？&lt;/p&gt;
+&lt;p&gt;距离KotlinConf 2017只剩100多天了，我们在此非常激动地宣布我们邀请了&lt;a href=&quot;https://kotlinconf.com/speakers/?utm_source=kotlinblog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=speakerannouncement&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;48位十分出色的讲师&lt;/a&gt;发表演说！能有这样优秀的嘉宾与公司团队代表Kotlin社区，我感到非常兴奋。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://kotlinconf.com/?utm_source=kotlinblog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=speakerannouncement&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img alt=&quot;KotlinConf&quot; class=&quot;aligncenter size-full wp-image-5123&quot; height=&quot;354&quot; src=&quot;https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/07/kc.png&quot; width=&quot;940&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span id=&quot;more-5121&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="kotlin" scheme="http://yoursite.com/categories/kotlin/"/>
+    
+    
+      <category term="kotlin" scheme="http://yoursite.com/tags/kotlin/"/>
+    
+      <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+  </entry>
   
   <entry>
     <title>(译)Kotlin Future Features Survey Results</title>
