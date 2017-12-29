@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-29T10:43:04.122Z</updated>
+  <updated>2017-12-29T14:27:04.128Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>(译)Kotlin 1.2 M2 is out</title>
-    <link href="http://yoursite.com/2017/09/14/(%E8%AF%91)Kotlin%201.2%20M2%20is%20out/"/>
-    <id>http://yoursite.com/2017/09/14/(译)Kotlin 1.2 M2 is out/</id>
-    <published>2017-09-13T16:00:00.000Z</published>
-    <updated>2017-11-29T10:43:04.122Z</updated>
+    <link href="http://yoursite.com/2017/09/10/(%E8%AF%91)Kotlin%201.2%20M2%20is%20out/"/>
+    <id>http://yoursite.com/2017/09/10/(译)Kotlin 1.2 M2 is out/</id>
+    <published>2017-09-09T16:00:00.000Z</published>
+    <updated>2017-12-29T14:27:04.128Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="https://suima0v0.github.io" target="_blank" rel="external">黄志强</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/08/kotlin-1-2-m2-is-out/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/08/kotlin-1-2-m2-is-out/</a></p>
@@ -98,11 +98,60 @@
   </entry>
   
   <entry>
-    <title>(译)Kotlin Future Features Survey Results</title>
-    <link href="http://yoursite.com/2017/07/24/(%E8%AF%91)Kotlin%20Future%20Features%20Survey%20Results/"/>
-    <id>http://yoursite.com/2017/07/24/(译)Kotlin Future Features Survey Results/</id>
+    <title>(译)KotlinConf – Speaker List Announced</title>
+    <link href="http://yoursite.com/2017/07/24/(%E8%AF%91)KotlinConf%20-%20Speaker%20List%20Announced/"/>
+    <id>http://yoursite.com/2017/07/24/(译)KotlinConf - Speaker List Announced/</id>
     <published>2017-07-23T16:00:00.000Z</published>
-    <updated>2017-11-29T10:42:46.180Z</updated>
+    <updated>2017-12-29T14:26:50.027Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="https://suima0v0.github.io" target="_blank" rel="external">黄志强</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/</a></p>
+</blockquote>
+<p>仍未到11月吗？</p>
+<p>距离KotlinConf 2017只剩100多天了，我们在此非常激动地宣布我们邀请了<a href="https://kotlinconf.com/speakers/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">48位十分出色的讲师</a>发表演说！能有这样优秀的嘉宾与公司团队代表Kotlin社区，我感到非常兴奋。</p>
+
+<p><a href="https://kotlinconf.com/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external"><img alt="KotlinConf" class="aligncenter size-full wp-image-5123" height="354" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/07/kc.png" width="940"></a></p>
+
+
+<p><span id="more-5121"></span></p>
+
+<a id="more"></a>
+<p>一般抢先票在首轮抢先注册活动之后也已经售罄了，普通门票尚在发售中，售完即止。如果你想参加KotlinConf，也请<a href="https://kotlinconf.com/registration/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">马上注册</a>吧，否则你将错失机会。</p>
+<p>温馨提示，KotlinConf将于11月2-3日在美丽的加利福尼亚州旧金山27码头举行。届时JetBrains团队和充满激情的社区讲师将分享他们关于Kotlin的知识，经验和理念。</p>
+<p>为期两天的学习，交流会与更多的乐趣在等待着你。<a href="https://kotlinconf.com/registration/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">立刻注册吧</a>！</p>
+<p>我们期待着在今秋的旧金山与你相见！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;译者：&lt;a href=&quot;https://pye52.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;团子吃蛋挞&lt;/a&gt;&amp;amp;&lt;a href=&quot;https://suima0v0.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黄志强&lt;/a&gt;&lt;br&gt;源地址：&lt;a href=&quot;https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;仍未到11月吗？&lt;/p&gt;
+&lt;p&gt;距离KotlinConf 2017只剩100多天了，我们在此非常激动地宣布我们邀请了&lt;a href=&quot;https://kotlinconf.com/speakers/?utm_source=kotlinblog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=speakerannouncement&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;48位十分出色的讲师&lt;/a&gt;发表演说！能有这样优秀的嘉宾与公司团队代表Kotlin社区，我感到非常兴奋。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://kotlinconf.com/?utm_source=kotlinblog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=speakerannouncement&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img alt=&quot;KotlinConf&quot; class=&quot;aligncenter size-full wp-image-5123&quot; height=&quot;354&quot; src=&quot;https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/07/kc.png&quot; width=&quot;940&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;span id=&quot;more-5121&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="kotlin" scheme="http://yoursite.com/categories/kotlin/"/>
+    
+    
+      <category term="kotlin" scheme="http://yoursite.com/tags/kotlin/"/>
+    
+      <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(译)Kotlin Future Features Survey Results</title>
+    <link href="http://yoursite.com/2017/07/23/(%E8%AF%91)Kotlin%20Future%20Features%20Survey%20Results/"/>
+    <id>http://yoursite.com/2017/07/23/(译)Kotlin Future Features Survey Results/</id>
+    <published>2017-07-22T16:00:00.000Z</published>
+    <updated>2017-12-29T14:26:36.920Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="https://suima0v0.github.io" target="_blank" rel="external">黄志强</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/</a></p>
@@ -177,55 +226,6 @@
   </entry>
   
   <entry>
-    <title>(译)KotlinConf – Speaker List Announced</title>
-    <link href="http://yoursite.com/2017/07/23/(%E8%AF%91)KotlinConf%20-%20Speaker%20List%20Announced/"/>
-    <id>http://yoursite.com/2017/07/23/(译)KotlinConf - Speaker List Announced/</id>
-    <published>2017-07-22T16:00:00.000Z</published>
-    <updated>2017-11-29T10:42:27.084Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="https://suima0v0.github.io" target="_blank" rel="external">黄志强</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/</a></p>
-</blockquote>
-<p>仍未到11月吗？</p>
-<p>距离KotlinConf 2017只剩100多天了，我们在此非常激动地宣布我们邀请了<a href="https://kotlinconf.com/speakers/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">48位十分出色的讲师</a>发表演说！能有这样优秀的嘉宾与公司团队代表Kotlin社区，我感到非常兴奋。</p>
-
-<p><a href="https://kotlinconf.com/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external"><img alt="KotlinConf" class="aligncenter size-full wp-image-5123" height="354" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/07/kc.png" width="940"></a></p>
-
-
-<p><span id="more-5121"></span></p>
-
-<a id="more"></a>
-<p>一般抢先票在首轮抢先注册活动之后也已经售罄了，普通门票尚在发售中，售完即止。如果你想参加KotlinConf，也请<a href="https://kotlinconf.com/registration/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">马上注册</a>吧，否则你将错失机会。</p>
-<p>温馨提示，KotlinConf将于11月2-3日在美丽的加利福尼亚州旧金山27码头举行。届时JetBrains团队和充满激情的社区讲师将分享他们关于Kotlin的知识，经验和理念。</p>
-<p>为期两天的学习，交流会与更多的乐趣在等待着你。<a href="https://kotlinconf.com/registration/?utm_source=kotlinblog&amp;utm_medium=blog&amp;utm_campaign=speakerannouncement" target="_blank" rel="external">立刻注册吧</a>！</p>
-<p>我们期待着在今秋的旧金山与你相见！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;译者：&lt;a href=&quot;https://pye52.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;团子吃蛋挞&lt;/a&gt;&amp;amp;&lt;a href=&quot;https://suima0v0.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黄志强&lt;/a&gt;&lt;br&gt;源地址：&lt;a href=&quot;https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://blog.jetbrains.com/kotlin/2017/07/kotlinconf-speaker-list-announced/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;仍未到11月吗？&lt;/p&gt;
-&lt;p&gt;距离KotlinConf 2017只剩100多天了，我们在此非常激动地宣布我们邀请了&lt;a href=&quot;https://kotlinconf.com/speakers/?utm_source=kotlinblog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=speakerannouncement&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;48位十分出色的讲师&lt;/a&gt;发表演说！能有这样优秀的嘉宾与公司团队代表Kotlin社区，我感到非常兴奋。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://kotlinconf.com/?utm_source=kotlinblog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=speakerannouncement&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img alt=&quot;KotlinConf&quot; class=&quot;aligncenter size-full wp-image-5123&quot; height=&quot;354&quot; src=&quot;https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/07/kc.png&quot; width=&quot;940&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;p&gt;&lt;span id=&quot;more-5121&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="kotlin" scheme="http://yoursite.com/categories/kotlin/"/>
-    
-    
-      <category term="kotlin" scheme="http://yoursite.com/tags/kotlin/"/>
-    
-      <category term="翻译" scheme="http://yoursite.com/tags/%E7%BF%BB%E8%AF%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>夏の音：ギタとひぐらしと少女のうた</title>
     <link href="http://yoursite.com/2017/07/16/%E5%A4%8F%E3%81%AE%E9%9F%B3%EF%BC%9A%E3%82%AE%E3%82%BF%E3%81%A8%E3%81%B2%E3%81%90%E3%82%89%E3%81%97%E3%81%A8%E5%B0%91%E5%A5%B3%E3%81%AE%E3%81%86%E3%81%9F/"/>
     <id>http://yoursite.com/2017/07/16/夏の音：ギタとひぐらしと少女のうた/</id>
@@ -262,6 +262,38 @@
   </entry>
   
   <entry>
+    <title>狂赋</title>
+    <link href="http://yoursite.com/2017/07/15/%E7%8B%82%E8%B5%8B/"/>
+    <id>http://yoursite.com/2017/07/15/狂赋/</id>
+    <published>2017-07-14T16:00:00.000Z</published>
+    <updated>2017-12-29T14:26:22.034Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　狂者，气也。</p>
+<p>　　腹满书而生气，气饱腹而自溢。溢者，狂也。大凡狂者，皆负才情。小才者狂，芥而锐目，倾国色之牡丹，决桎梏之洪流，落逸禽之飞矢，幻灯红之迷昙；大才者狂，瀚而磅礴，抟扶摇之棕榈，纳百川之沉渊，覆天地之浮云，忘光阴之大椿。小狂狂而毕露，鹗之眸，豹之尾；大狂狂而尽敛，鹏之羽，龟之甲。是故小才者，“狂”之左，兽之利器；大才者，“狂”之右，王之霸气。</p>
+<p>　　夫人之气宇，修于内而发于外，生于书而广于己。汲百家之精髓，融一身之秀气，生于混沌，化于雏形，表于世间。忽察人之修行，莫如己高；世之涵养，莫如己深，便滋狂傲之气，视弱者为蝼蚁，以自身为独秀，著狂论以傲世，搁礼仪于不顾，其小狂已成形。既而似韦编三绝，汗牛充栋，又品察人间情愫，世态百味，便始参天道，自成一体，饱藏宇宙天机，吐纳山川灵气，洞察时间轮回，包容天地万物，融有形于无形，化小狂为大狂。由是利气既褪，霸气已成。</p>
+<a id="more"></a>
+<p>　　故凡学者必有气，气者必有狂，气生于悟道，狂生于赛道。广义而论，道有生于市者，有生于武者，有生于书者。故亦有商之气，将之气，儒之气。朱门肉臭谓之小狂，玉堂金马谓之大狂；荐守街亭谓之小狂，喝断长坂谓之大狂；笑说鸡肋谓之小狂，客居五柳谓之大狂。大狂者，必立其巅峰，俯仰天地，如君临天下，唯我独尊，又于其处世腹有海量，不为诽言所怒，不为危情所动。以凡人之躯，拥圣贤之灵，此之谓“半仙”。</p>
+<p>　　夫狂者至尊至傲。察俗夫之偶运兮，嗤之以鼻；逢屈身之金帛兮，不动如山；遭喧尘之不解兮，隐耕桃林，非退也，不屑耳。然是人不屑者众，狂者寡，此余之大恨哉。</p>
+<p>　　二〇一一年八月二十日于顺德</p>
+<p>　　无瘾诗人</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　狂者，气也。&lt;/p&gt;
+&lt;p&gt;　　腹满书而生气，气饱腹而自溢。溢者，狂也。大凡狂者，皆负才情。小才者狂，芥而锐目，倾国色之牡丹，决桎梏之洪流，落逸禽之飞矢，幻灯红之迷昙；大才者狂，瀚而磅礴，抟扶摇之棕榈，纳百川之沉渊，覆天地之浮云，忘光阴之大椿。小狂狂而毕露，鹗之眸，豹之尾；大狂狂而尽敛，鹏之羽，龟之甲。是故小才者，“狂”之左，兽之利器；大才者，“狂”之右，王之霸气。&lt;/p&gt;
+&lt;p&gt;　　夫人之气宇，修于内而发于外，生于书而广于己。汲百家之精髓，融一身之秀气，生于混沌，化于雏形，表于世间。忽察人之修行，莫如己高；世之涵养，莫如己深，便滋狂傲之气，视弱者为蝼蚁，以自身为独秀，著狂论以傲世，搁礼仪于不顾，其小狂已成形。既而似韦编三绝，汗牛充栋，又品察人间情愫，世态百味，便始参天道，自成一体，饱藏宇宙天机，吐纳山川灵气，洞察时间轮回，包容天地万物，融有形于无形，化小狂为大狂。由是利气既褪，霸气已成。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="文章" scheme="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+      <category term="骈文" scheme="http://yoursite.com/tags/%E9%AA%88%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ゼロから日本語を勉強しましょう！</title>
     <link href="http://yoursite.com/2017/07/15/%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81/"/>
     <id>http://yoursite.com/2017/07/15/ゼロから日本語を勉強しましょう！/</id>
@@ -293,43 +325,11 @@
   </entry>
   
   <entry>
-    <title>狂赋</title>
-    <link href="http://yoursite.com/2017/07/14/%E7%8B%82%E8%B5%8B/"/>
-    <id>http://yoursite.com/2017/07/14/狂赋/</id>
-    <published>2017-07-13T16:00:00.000Z</published>
-    <updated>2017-11-29T10:46:19.350Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　狂者，气也。</p>
-<p>　　腹满书而生气，气饱腹而自溢。溢者，狂也。大凡狂者，皆负才情。小才者狂，芥而锐目，倾国色之牡丹，决桎梏之洪流，落逸禽之飞矢，幻灯红之迷昙；大才者狂，瀚而磅礴，抟扶摇之棕榈，纳百川之沉渊，覆天地之浮云，忘光阴之大椿。小狂狂而毕露，鹗之眸，豹之尾；大狂狂而尽敛，鹏之羽，龟之甲。是故小才者，“狂”之左，兽之利器；大才者，“狂”之右，王之霸气。</p>
-<p>　　夫人之气宇，修于内而发于外，生于书而广于己。汲百家之精髓，融一身之秀气，生于混沌，化于雏形，表于世间。忽察人之修行，莫如己高；世之涵养，莫如己深，便滋狂傲之气，视弱者为蝼蚁，以自身为独秀，著狂论以傲世，搁礼仪于不顾，其小狂已成形。既而似韦编三绝，汗牛充栋，又品察人间情愫，世态百味，便始参天道，自成一体，饱藏宇宙天机，吐纳山川灵气，洞察时间轮回，包容天地万物，融有形于无形，化小狂为大狂。由是利气既褪，霸气已成。</p>
-<a id="more"></a>
-<p>　　故凡学者必有气，气者必有狂，气生于悟道，狂生于赛道。广义而论，道有生于市者，有生于武者，有生于书者。故亦有商之气，将之气，儒之气。朱门肉臭谓之小狂，玉堂金马谓之大狂；荐守街亭谓之小狂，喝断长坂谓之大狂；笑说鸡肋谓之小狂，客居五柳谓之大狂。大狂者，必立其巅峰，俯仰天地，如君临天下，唯我独尊，又于其处世腹有海量，不为诽言所怒，不为危情所动。以凡人之躯，拥圣贤之灵，此之谓“半仙”。</p>
-<p>　　夫狂者至尊至傲。察俗夫之偶运兮，嗤之以鼻；逢屈身之金帛兮，不动如山；遭喧尘之不解兮，隐耕桃林，非退也，不屑耳。然是人不屑者众，狂者寡，此余之大恨哉。</p>
-<p>　　二〇一一年八月二十日于顺德</p>
-<p>　　无瘾诗人</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　狂者，气也。&lt;/p&gt;
-&lt;p&gt;　　腹满书而生气，气饱腹而自溢。溢者，狂也。大凡狂者，皆负才情。小才者狂，芥而锐目，倾国色之牡丹，决桎梏之洪流，落逸禽之飞矢，幻灯红之迷昙；大才者狂，瀚而磅礴，抟扶摇之棕榈，纳百川之沉渊，覆天地之浮云，忘光阴之大椿。小狂狂而毕露，鹗之眸，豹之尾；大狂狂而尽敛，鹏之羽，龟之甲。是故小才者，“狂”之左，兽之利器；大才者，“狂”之右，王之霸气。&lt;/p&gt;
-&lt;p&gt;　　夫人之气宇，修于内而发于外，生于书而广于己。汲百家之精髓，融一身之秀气，生于混沌，化于雏形，表于世间。忽察人之修行，莫如己高；世之涵养，莫如己深，便滋狂傲之气，视弱者为蝼蚁，以自身为独秀，著狂论以傲世，搁礼仪于不顾，其小狂已成形。既而似韦编三绝，汗牛充栋，又品察人间情愫，世态百味，便始参天道，自成一体，饱藏宇宙天机，吐纳山川灵气，洞察时间轮回，包容天地万物，融有形于无形，化小狂为大狂。由是利气既褪，霸气已成。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="文章" scheme="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
-    
-    
-      <category term="骈文" scheme="http://yoursite.com/tags/%E9%AA%88%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
     <title>少年守志说</title>
-    <link href="http://yoursite.com/2017/07/14/%E5%B0%91%E5%B9%B4%E5%AE%88%E5%BF%97%E8%AF%B4/"/>
-    <id>http://yoursite.com/2017/07/14/少年守志说/</id>
-    <published>2017-07-13T16:00:00.000Z</published>
-    <updated>2017-11-29T10:46:06.239Z</updated>
+    <link href="http://yoursite.com/2017/07/12/%E5%B0%91%E5%B9%B4%E5%AE%88%E5%BF%97%E8%AF%B4/"/>
+    <id>http://yoursite.com/2017/07/12/少年守志说/</id>
+    <published>2017-07-11T16:00:00.000Z</published>
+    <updated>2017-12-29T14:26:00.777Z</updated>
     
     <content type="html"><![CDATA[<p>　　守志如填海，未见其满而日有所满；辍志如易途，日有所行而未见其远。然时之少年，辍志者众，守志者寡。人是如此，国何以堪！逢五四之佳节，得总理之劝语，概时下之短志，寄文章以励子。</p>
 <p>　　少年守志，曦升碧瑶之霄；中年守志，日受骄云之蔽；老年守志，夕落东去之江。夫少年者，其心也万壑，其力也金刚，其智也灵狐，其气也长江。少不守志，更待何时？</p>
