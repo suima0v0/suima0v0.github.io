@@ -57,6 +57,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[小南瓜鸡蛋杯宣传视频]]></title>
+    <url>%2F2018%2F01%2F13%2F%E5%B0%8F%E5%8D%97%E7%93%9C%E9%B8%A1%E8%9B%8B%E6%9D%AF%E5%AE%A3%E4%BC%A0%E8%A7%86%E9%A2%91%2F</url>
+    <content type="text"><![CDATA[STAFF：拍摄 甘希明&amp;美逗摄影脚本 黄志强剪辑 黄志强后期 黄志强]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[(译)Kotlin 1.2 Beta is out]]></title>
     <url>%2F2018%2F01%2F13%2F(%E8%AF%91)Kotlin%201.2%20Beta%20is%20out%2F</url>
     <content type="text"><![CDATA[译者：团子吃蛋挞&amp;黄志强源地址：https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/ 我们很高兴地发布Kotlin 1.2的Beta版本。借此发布，我们将揭示Kotlin 1.2的主要新特性——跨平台项目的实验性支持。此外，Kotlin native和标准库功能也开发完毕 - 所有计划于Kotlin 1.2实现的新功能都已完备。现在正是你们反馈新改动的绝佳时期 - 因为我们仍然有时间对反馈加以考虑并调整1.2终版的设计。 在工具方面，Kotlin 1.2 Beta包含了与最近发布的1.1.50更新相同的一系列特性。该测试版兼容从2016.3至2017.3的所有IntelliJ IDEA版本以及Android Studio 2.3与3.0。 从1.2-M2开始，所有的更新日志都可以在这里找到。以下是重大改动： 跨平台项目跨平台项目是Kotlin 1.2的一个新的实验性功能，允许你在Kotlin支持的目标平台复用代码-JVM，JavaScript以及(未来会支持的)Native。在跨平台项目中，你提交的平台间的通用代码将放入通用模块，连同平台相关的部分一并放入依赖于平台的特定模块中。当您为一个特定的平台编译项目，公用部分和平台特定部分的代码都会生成出来。 跨平台项目所支持的一个关键特性是通过预期和实际的声明来表现通用代码与平台特定部分的依赖关系。预期声明定义API（类，接口，注释，顶层声明等）。实际声明则是该API在平台相依的实现，或是在外部库中引用现有实现的typealias： 1234567891011121314// Common codeexpect fun hello(world: String) expect class URL(spec: String) &#123; open fun getHost(): String open fun getPath(): String&#125; // JVM codeactual fun hello(world: String) &#123; println("Hello JVM $world")&#125; actual typealias URL = java.net.URL 若想得到更多跨平台项目的信息，请查看此文档。 如果你在发布之前就已经尝试了该功能，也请注意及时更新您的项目：header和impl关键字已重命名为expect和actual。若想代码自动更新，请使用IntelliJ IDEA中的Analyze | Cleanup Code。 语言和编译器注释中的数组字面值Kotlin 1.2有一个新的语言特性：对注释中文字常量数组的支持。现在，不需要类似@CacheConfig(cacheNames = arrayOf(&quot;books&quot;, &quot;default&quot;))这样的写法了，你只需要这样简单地表示： @CacheConfig(cacheNames = [&quot;books&quot;, &quot;default&quot;]) 其实早在Kotlin 1.2之前的里程碑版本中你已经可以这样做了。但在1.2 Beta中，我们更加统一了语法并允许使用常量数组和可变参数： @RequestMapping(value = [&quot;value1&quot;, &quot;value2&quot;], path = [&quot;path1&quot;, &quot;path2&quot;]) 为了实现这种改动，我们决定对常规方法调用和注释中，使用命名参数和可变参数的语法做一些调整。你可能会感到惊讶，因为在Kotlin 1.1中，当使用命名参数语法调用可变参数方法时，可以传递单个参数作为一个立即值： 123fun foo(vararg strs: String) &#123; ... &#125; foo(strs = "abc") 这样将&quot;abc&quot;赋值于strs是不太恰当的，这导致我们在将整个数组作为命名参数传递时得使用展开运算符： foo(strs = *arr) 我们很想可以写成foo(strs = arr)，但考虑到兼容性，它需要一个逐步迁移的过程，所以在1.2版本里面，我们弃用了foo(strs = &quot;abc&quot;)这样的写法。取而代之的是（这种用法应该很少见到），你可以使用展开和arrayOf方法： foo(x = *arrayOf(&quot;abc&quot;)) 我们计划实现一个编译器优化方案来消除在这样的调用下对于数组的分配与复制。 由于注释是一个更受限制的上下文，所以我们可以跳过一步迁移，那样你就可以简单地把值放入一个字面值数组，而不需要扩展运算符： 1234annotation class Foo(vararg value: String) @Foo(value = "a") // deprecated@Foo(value = ["a"]) // correct 在You Track issue可以看到更多相关信息。 lateinit改进我们添加了一个新的反射API，这允许您检查一个lateinit变量是否已被初始化： 1234567lateinit var file: File // ... if (::file.isInitialized) &#123; ...&#125; 这是该KEEP提议的一部分实现，剩下的部分（析构的方法）则暂时推迟到1.3。 此外，lateinit修饰符现在可以用在全局属性和局部变量上了。举个例子，当你初始化一个对象图，在图中对象的属性之间有一个循环依赖关系的时候（比如，当lambda作为一个构造函数的参数让一个对象引用另一个对象的时候，必须在传递之后才定义），局部变量便可以使用了： 12345678910111213fun test() &#123; lateinit var x: Component // inject takes a lambda which must return the Component though val injector = inject( ..., componentProvider = &#123; x &#125;, ... ) // Initialization is only possible via injector, once it has been run x = injector.createComponent()&#125; 更多详细信息，请查看KEEP。 绑定方法引用的改进现在，你可以把类似this::foo这样的引用方法中的this 省略掉，直接写成::foo。在之前只有全局引用的时候才能省略。更多信息，请查看YouTrack issue。 类型推断的改进Kotlin编译器现在可以使用类型推断中的类型转换信息。当调用了一个返回T且转换为特定类型Foo的泛型方法，编译器现在可以知道这个泛型绑定的是Foo类型。这对于Android开发人员十分重要，因为编译器在Android API26中可以正确分析findViewById了： val button = findViewById（R.id.button）as Button 由于该方法已被改为&lt;T extends View&gt; T findViewById(int id)，因此Kotlin 1.1已不支持在这种调用中推断T类型参数。更多信息，请查看YouTrack issue。 警告视为错误现在编译器提供了一个将所有警告视为错误的选项。在命令行或下面的Gradle代码片段中使用-Werror： 123compileKotlin &#123; kotlinOptions.warningsAsErrors = true&#125; Smart cast的改进Smart cast现在能用在subjects of safe casts了： 123456fun foo(x: Foo?) &#123; val b = (x as? SubClass)?.subclassMethod1() if (b != null) &#123; x.subclassMethod2() // x is smart cast to SubClass &#125;&#125; 另外，以前只允许在lambda之前修改的的var变量现在能在其中执行Smart cast了： 12345678var x: String? = nullif (flag) x = "Yahoo!" run &#123; if (x != null) &#123; println(x.length) // x is smart cast to String &#125;&#125; 枚举中的嵌套类枚举内的嵌套类现在已经被弃用；解决方案为将class标记为inner。 标准库分包的兼容性Kotlin标准库现在完全兼容Java 9的模块系统，Java 9禁止分包（多个jar文件在同一个包中声明类）。为了支持分包，我们创建了新的kotlin-stdlib-jdk7和kotlin-stdlib-jdk8，取代了旧的kotlin-stdlib-jre7和kotlin-stdlib-jre8。其中的声明在kotlin的同名包下是可见的，但是由于我们对编译器添加了黑魔法，这在Java的不同名包下也是可见的。因此，这种切换不需要对源代码进行任何更改。 为确保与新模块系统的兼容性，我们做出的另一个改动是从kotlin-reflect库中移除kotlin.reflect包中已经弃用的声明。这些声明需要在kotlin.reflect.full包中使用，这在Kotlin 1.1中就已经支持了。 kotlin.mathkotlin.math是Kotlin 1.2标准库中的一个新包，允许您在跨平台代码中执行数学运算。在1.2-Beta中，我们对它进行了一些改进： 现在支持反双曲函数（asinh，acosh，atanh） 在1.2-M2中添加的浮点数二进制表示（toBits，nextUp等）相关的函数现在可用于JavaScript 对JavaScript中polyfills精确度的改进 发布前的注意事项与其他里程碑版本一样，我们对新语言和库的相关功能不保证向后兼容性。在1.2的里程碑版本中引入的任何内容在1.2终版之前可能会发生变化。一旦RC版确定，在此之前版本的编译文件将被编译器清理，你需要重新编译1.2-Mx或1.2-Beta所编译过的文件。 但是，这不会影响由1.1.x和之前release版本编译的代码。 如何更新通过Maven / Gradle：在构建脚本和项目仓库中添加http://dl.bintray.com/kotlin/kotlin-eap-1.2；使用1.2.0-beta-31作为编译器插件和标准库的版本号。 通过IntelliJ IDEA：工具→Kotlin→配置Kotlin插件更新，在更新下拉列表中选择“Early Access Preview 1.2”，然后点击检查更新。命令行编译器可以从GitHub release page下载。 通过try.kotlinlang.org：使用右下角的下拉列表将编译器版本更改为1.2（即将实现）。]]></content>
@@ -66,17 +77,6 @@
       <tags>
         <tag>kotlin</tag>
         <tag>翻译</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[小南瓜鸡蛋杯宣传视频]]></title>
-    <url>%2F2018%2F01%2F13%2F%E5%B0%8F%E5%8D%97%E7%93%9C%E9%B8%A1%E8%9B%8B%E6%9D%AF%E5%AE%A3%E4%BC%A0%E8%A7%86%E9%A2%91%2F</url>
-    <content type="text"><![CDATA[STAFF：拍摄 甘希明&amp;美逗摄影脚本 黄志强剪辑 黄志强后期 黄志强]]></content>
-      <categories>
-        <category>视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
