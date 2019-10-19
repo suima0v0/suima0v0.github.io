@@ -89,7 +89,7 @@
     <link href="http://yoursite.com/2019/02/22/%E5%86%99%E5%9C%A8%E8%A5%BF%E8%A3%85%E9%9D%A9%E5%B1%A5%E8%BF%87%E5%B9%B4%E4%B9%8B%E5%90%8E/"/>
     <id>http://yoursite.com/2019/02/22/写在西装革履过年之后/</id>
     <published>2019-02-21T16:00:00.000Z</published>
-    <updated>2019-03-03T05:56:37.087Z</updated>
+    <updated>2019-10-19T13:13:19.443Z</updated>
     
     <content type="html"><![CDATA[<p>如果没有这种小确幸，人生只不过是干巴巴的沙漠而已。<br>​                                                                                     </p><p align="right">—— 村上春树</p>    <p></p>
 <p>5……4……3……2……1！新年快乐！那是春晚循例的倒数，是隔壁响起的鞭炮竹声，是纷至沓来的群发祝福提醒。整个中国都沉浸在新一年的喜庆中，至少，听起来确实如此。</p>
@@ -121,7 +121,7 @@
       <category term="文章" scheme="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
     
     
-      <category term="蓝杏树" scheme="http://yoursite.com/tags/%E8%93%9D%E6%9D%8F%E6%A0%91/"/>
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -635,6 +635,37 @@
   </entry>
   
   <entry>
+    <title>ゼロから日本語を勉強しましょう！</title>
+    <link href="http://yoursite.com/2017/07/15/%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81/"/>
+    <id>http://yoursite.com/2017/07/15/ゼロから日本語を勉強しましょう！/</id>
+    <published>2017-07-14T16:00:00.000Z</published>
+    <updated>2017-11-29T10:41:07.975Z</updated>
+    
+    <content type="html"><![CDATA[<p>七月十四日/晴れ</p>
+<p>これはおれの気まぐれかもしれない。まあ、とりあえず、おれの日本語学習プログラムは復活だ！めでたしめでたし。</p>
+<p>教材は「みんなの日本語」を選べます。「新标日」と「新编日语」両方も勉強してみました、前者の文法が変、後者の文法はただしがつまらないです（さすが大学の教材）。それで、「みんなの日本語」を試しましょう。</p>
+<a id="more"></a>
+<p>日本語の日記もよく書くしよ、難易度高いけど、頑張ってみよう！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;七月十四日/晴れ&lt;/p&gt;
+&lt;p&gt;これはおれの気まぐれかもしれない。まあ、とりあえず、おれの日本語学習プログラムは復活だ！めでたしめでたし。&lt;/p&gt;
+&lt;p&gt;教材は「みんなの日本語」を選べます。「新标日」と「新编日语」両方も勉強してみました、前者の文法が変、後者の文法はただしがつまらないです（さすが大学の教材）。それで、「みんなの日本語」を試しましょう。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="日本語" scheme="http://yoursite.com/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    
+      <category term="日本语" scheme="http://yoursite.com/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>狂赋</title>
     <link href="http://yoursite.com/2017/07/15/%E7%8B%82%E8%B5%8B/"/>
     <id>http://yoursite.com/2017/07/15/狂赋/</id>
@@ -663,37 +694,6 @@
     
     
       <category term="骈文" scheme="http://yoursite.com/tags/%E9%AA%88%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ゼロから日本語を勉強しましょう！</title>
-    <link href="http://yoursite.com/2017/07/15/%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81/"/>
-    <id>http://yoursite.com/2017/07/15/ゼロから日本語を勉強しましょう！/</id>
-    <published>2017-07-14T16:00:00.000Z</published>
-    <updated>2017-11-29T10:41:07.975Z</updated>
-    
-    <content type="html"><![CDATA[<p>七月十四日/晴れ</p>
-<p>これはおれの気まぐれかもしれない。まあ、とりあえず、おれの日本語学習プログラムは復活だ！めでたしめでたし。</p>
-<p>教材は「みんなの日本語」を選べます。「新标日」と「新编日语」両方も勉強してみました、前者の文法が変、後者の文法はただしがつまらないです（さすが大学の教材）。それで、「みんなの日本語」を試しましょう。</p>
-<a id="more"></a>
-<p>日本語の日記もよく書くしよ、難易度高いけど、頑張ってみよう！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;七月十四日/晴れ&lt;/p&gt;
-&lt;p&gt;これはおれの気まぐれかもしれない。まあ、とりあえず、おれの日本語学習プログラムは復活だ！めでたしめでたし。&lt;/p&gt;
-&lt;p&gt;教材は「みんなの日本語」を選べます。「新标日」と「新编日语」両方も勉強してみました、前者の文法が変、後者の文法はただしがつまらないです（さすが大学の教材）。それで、「みんなの日本語」を試しましょう。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="日本語" scheme="http://yoursite.com/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
-    
-    
-      <category term="日本语" scheme="http://yoursite.com/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
-    
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
