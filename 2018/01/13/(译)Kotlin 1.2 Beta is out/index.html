@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="kotlin,翻译," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Suima's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="译者：团子吃蛋挞&amp;amp;黄志强源地址：https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/  我们很高兴地发布Kotlin 1.2的Beta版本。借此发布，我们将揭示Kotlin 1.2的主要新特性——跨平台项目的实验性支持。此外，Kotlin native和标准库功能也开发完毕 - 所有计划于Kotlin 1.2实">
+<meta name="keywords" content="kotlin,翻译">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(译)Kotlin 1.2 Beta is out">
+<meta property="og:url" content="http://yoursite.com/2018/01/13/(译)Kotlin 1.2 Beta is out/index.html">
+<meta property="og:site_name" content="Suima&#39;s Blog">
+<meta property="og:description" content="译者：团子吃蛋挞&amp;amp;黄志强源地址：https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/  我们很高兴地发布Kotlin 1.2的Beta版本。借此发布，我们将揭示Kotlin 1.2的主要新特性——跨平台项目的实验性支持。此外，Kotlin native和标准库功能也开发完毕 - 所有计划于Kotlin 1.2实">
+<meta property="og:image" content="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/09/12beta.png">
+<meta property="og:updated_time" content="2018-01-13T10:06:02.796Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(译)Kotlin 1.2 Beta is out">
+<meta name="twitter:description" content="译者：团子吃蛋挞&amp;amp;黄志强源地址：https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/  我们很高兴地发布Kotlin 1.2的Beta版本。借此发布，我们将揭示Kotlin 1.2的主要新特性——跨平台项目的实验性支持。此外，Kotlin native和标准库功能也开发完毕 - 所有计划于Kotlin 1.2实">
+<meta name="twitter:image" content="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/09/12beta.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/13/(译)Kotlin 1.2 Beta is out/"/>
+
+
+
+
+
+  <title>(译)Kotlin 1.2 Beta is out | Suima's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Suima's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/13/(译)Kotlin 1.2 Beta is out/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SuiMa_黃志強">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Suima's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">(译)Kotlin 1.2 Beta is out</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-13T00:00:00+08:00">
+                2018-01-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/kotlin/" itemprop="url" rel="index">
+                    <span itemprop="name">kotlin</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="https://suima0v0.github.io" target="_blank" rel="external">黄志强</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/09/kotlin-1-2-beta-is-out/</a></p>
+</blockquote>
+<p>我们很高兴地发布Kotlin 1.2的Beta版本。借此发布，我们将揭示Kotlin 1.2的主要新特性——<strong>跨平台项目</strong>的实验性支持。此外，Kotlin native和标准库功能也<strong>开发完毕</strong> - 所有计划于Kotlin 1.2实现的新功能都已完备。现在正是你们<strong>反馈新改动</strong>的绝佳时期 - 因为我们仍然有时间对反馈加以考虑并调整1.2终版的设计。</p>
+<p>在工具方面，Kotlin 1.2 Beta包含了与最近发布的<a href="https://github.com/enbandari/KotlinBlogTranslation/blob/master/translated/Kotlin%201.1.50%20is%20out.md" target="_blank" rel="external">1.1.50</a>更新相同的一系列特性。该测试版兼容从2016.3至2017.3的所有IntelliJ IDEA版本以及Android Studio 2.3与3.0。</p>
+<p>从1.2-M2开始，所有的更新日志都可以在<a href="https://github.com/JetBrains/kotlin/blob/1.2-Beta/ChangeLog.md" target="_blank" rel="external">这里</a>找到。以下是重大改动：<img alt="12beta" class="alignnone size-full wp-image-5314" height="750" src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2017/09/12beta.png" width="1500"></p>
+<a id="more"></a>
+<h1 id="跨平台项目"><a href="#跨平台项目" class="headerlink" title="跨平台项目"></a>跨平台项目</h1><p>跨平台项目是Kotlin 1.2的一个新的<strong>实验性</strong>功能，允许你在Kotlin支持的目标平台复用代码-JVM，JavaScript以及(未来会支持的)Native。在跨平台项目中，你提交的平台间的通用代码将放入通用模块，连同平台相关的部分一并放入依赖于平台的特定模块中。当您为一个特定的平台编译项目，公用部分和平台特定部分的代码都会生成出来。</p>
+<p>跨平台项目所支持的一个关键特性是通过<strong>预期和实际的声明</strong>来表现通用代码与平台特定部分的依赖关系。预期声明定义API（类，接口，注释，顶层声明等）。实际声明则是该API在平台相依的实现，或是在外部库中引用现有实现的typealias：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Common code</span></div><div class="line">expect <span class="function"><span class="keyword">fun</span> <span class="title">hello</span><span class="params">(world: <span class="type">String</span>)</span></span></div><div class="line"> </div><div class="line">expect <span class="class"><span class="keyword">class</span> <span class="title">URL</span></span>(spec: String) &#123;</div><div class="line">  <span class="keyword">open</span> <span class="function"><span class="keyword">fun</span> <span class="title">getHost</span><span class="params">()</span></span>: String</div><div class="line">  <span class="keyword">open</span> <span class="function"><span class="keyword">fun</span> <span class="title">getPath</span><span class="params">()</span></span>: String</div><div class="line">&#125;</div><div class="line"> </div><div class="line"><span class="comment">// JVM code</span></div><div class="line">actual <span class="function"><span class="keyword">fun</span> <span class="title">hello</span><span class="params">(world: <span class="type">String</span>)</span></span> &#123;</div><div class="line">  println(<span class="string">"Hello JVM <span class="variable">$world</span>"</span>)</div><div class="line">&#125;</div><div class="line"> </div><div class="line">actual typealias URL = java.net.URL</div></pre></td></tr></table></figure>
+<p>若想得到更多跨平台项目的信息，请查看此<a href="http://kotlinlang.org/docs/reference/multiplatform.html" target="_blank" rel="external">文档</a>。</p>
+<p>如果你在发布之前就已经尝试了该功能，也请注意及时更新您的项目：<code>header</code>和<code>impl</code>关键字已重命名为<code>expect</code>和<code>actual</code>。若想代码自动更新，请使用IntelliJ IDEA中的Analyze | Cleanup Code。</p>
+<h1 id="语言和编译器"><a href="#语言和编译器" class="headerlink" title="语言和编译器"></a>语言和编译器</h1><h2 id="注释中的数组字面值"><a href="#注释中的数组字面值" class="headerlink" title="注释中的数组字面值"></a>注释中的数组字面值</h2><p>Kotlin 1.2有一个新的语言特性：对<strong>注释中文字常量数组</strong>的支持。现在，不需要类似<code>@CacheConfig(cacheNames = arrayOf(&quot;books&quot;, &quot;default&quot;))</code>这样的写法了，你只需要这样简单地表示：</p>
+<p><code>@CacheConfig(cacheNames = [&quot;books&quot;, &quot;default&quot;])</code></p>
+<p>其实早在Kotlin 1.2之前的里程碑版本中你已经可以这样做了。但在1.2 Beta中，我们更加统一了语法并允许使用常量数组和<code>可变</code>参数：</p>
+<p><code>@RequestMapping(value = [&quot;value1&quot;, &quot;value2&quot;], path = [&quot;path1&quot;, &quot;path2&quot;])</code></p>
+<p>为了实现这种改动，我们决定对常规方法调用和注释中，使用命名参数和可变参数的语法做一些调整。你可能会感到惊讶，因为在Kotlin 1.1中，当使用命名参数语法调用<code>可变参数</code>方法时，可以传递单个参数作为一个立即值：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">foo</span><span class="params">(<span class="keyword">vararg</span> strs: <span class="type">String</span>)</span></span> &#123; ... &#125;</div><div class="line"> </div><div class="line">foo(strs = <span class="string">"abc"</span>)</div></pre></td></tr></table></figure>
+<p>这样将<code>&quot;abc&quot;</code>赋值于<code>strs</code>是不太恰当的，这导致我们在将整个数组作为命名参数传递时得使用展开运算符：</p>
+<p><code>foo(strs = *arr)</code></p>
+<p>我们很想可以写成<code>foo(strs = arr)</code>，但考虑到兼容性，它需要一个逐步迁移的过程，所以在1.2版本里面，我们弃用了<code>foo(strs = &quot;abc&quot;)</code>这样的写法。取而代之的是（这种用法应该很少见到），你可以使用展开和<code>arrayOf</code>方法：</p>
+<p><code>foo(x = *arrayOf(&quot;abc&quot;))</code></p>
+<p>我们计划实现一个<a href="https://youtrack.jetbrains.com/issue/KT-20462" target="_blank" rel="external">编译器优化方案</a>来消除在这样的调用下对于数组的分配与复制。</p>
+<p>由于注释是一个更受限制的上下文，所以我们可以跳过一步迁移，那样你就可以简单地把值放入一个字面值数组，而不需要扩展运算符：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">annotation</span> <span class="class"><span class="keyword">class</span> <span class="title">Foo</span></span>(<span class="keyword">vararg</span> value: String)</div><div class="line"> </div><div class="line"><span class="meta">@Foo(value = <span class="meta-string">"a"</span>)</span> <span class="comment">// deprecated</span></div><div class="line"><span class="meta">@Foo(value = [<span class="meta-string">"a"</span>])</span> <span class="comment">// correct</span></div></pre></td></tr></table></figure>
+<p>在<a href="https://youtrack.jetbrains.com/issue/KT-20171" target="_blank" rel="external">You Track issue</a>可以看到更多相关信息。</p>
+<h2 id="lateinit改进"><a href="#lateinit改进" class="headerlink" title="lateinit改进"></a>lateinit改进</h2><p>我们添加了一个新的反射API，这允许您检查一个<code>lateinit</code>变量是否已被初始化：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">lateinit</span> <span class="keyword">var</span> file: File</div><div class="line"> </div><div class="line"><span class="comment">// ...</span></div><div class="line"> </div><div class="line"><span class="keyword">if</span> (::file.isInitialized) &#123;</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这是<a href="https://github.com/Kotlin/KEEP/pull/73/files" target="_blank" rel="external">该KEEP提议</a>的一部分实现，剩下的部分（<code>析构</code>的方法）则暂时推迟到1.3。</p>
+<p>此外，<code>lateinit</code>修饰符现在可以用在<a href="https://youtrack.jetbrains.com/issue/KT-15461" target="_blank" rel="external">全局属性</a>和<a href="https://youtrack.jetbrains.com/issue/KT-14138" target="_blank" rel="external">局部变量</a>上了。举个例子，当你初始化一个对象图，在图中对象的属性之间有一个循环依赖关系的时候（比如，当lambda作为一个构造函数的参数让一个对象引用另一个对象的时候，必须在传递之后才定义），局部变量便可以使用了：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">test</span><span class="params">()</span></span> &#123;</div><div class="line">  <span class="keyword">lateinit</span> <span class="keyword">var</span> x: Component</div><div class="line"> </div><div class="line">  <span class="comment">// inject takes a lambda which must return the Component though</span></div><div class="line">  <span class="keyword">val</span> injector = inject(</div><div class="line">    ...,</div><div class="line">    componentProvider = &#123; x &#125;,</div><div class="line">    ...</div><div class="line">  )</div><div class="line"> </div><div class="line">  <span class="comment">// Initialization is only possible via injector, once it has been run</span></div><div class="line">  x = injector.createComponent()</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>更多详细信息，请查看<a href="https://github.com/Kotlin/KEEP/blob/master/proposals/local-and-top-level-lateinit-vars.md" target="_blank" rel="external">KEEP</a>。</p>
+<h2 id="绑定方法引用的改进"><a href="#绑定方法引用的改进" class="headerlink" title="绑定方法引用的改进"></a>绑定方法引用的改进</h2><p>现在，你可以把类似<code>this::foo</code>这样的引用方法中的<code>this</code> 省略掉，直接写成<code>::foo</code>。在之前只有全局引用的时候才能省略。更多信息，请查看<a href="https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FKT-15667" target="_blank" rel="external">YouTrack issue</a>。</p>
+<h2 id="类型推断的改进"><a href="#类型推断的改进" class="headerlink" title="类型推断的改进"></a>类型推断的改进</h2><p>Kotlin编译器现在可以使用类型推断中的类型转换信息。当调用了一个返回<code>T</code>且转换为特定类型<code>Foo</code>的泛型方法，编译器现在可以知道这个泛型绑定的是<code>Foo</code>类型。这对于Android开发人员十分重要，因为编译器在Android API26中可以正确分析<code>findViewById</code>了：</p>
+<p><code>val button = findViewById（R.id.button）as Button</code></p>
+<p>由于该方法已被改为<code>&lt;T extends View&gt; T findViewById(int id)</code>，因此Kotlin 1.1已不支持在这种调用中推断<code>T</code>类型参数。更多信息，请查看<a href="https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FKT-13644" target="_blank" rel="external">YouTrack issue</a>。</p>
+<h2 id="警告视为错误"><a href="#警告视为错误" class="headerlink" title="警告视为错误"></a>警告视为错误</h2><p>现在编译器提供了一个将所有警告视为错误的选项。在命令行或下面的Gradle代码片段中使用<code>-Werror</code>：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">compileKotlin &#123;</div><div class="line">  kotlinOptions.warningsAsErrors = <span class="literal">true</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Smart-cast的改进"><a href="#Smart-cast的改进" class="headerlink" title="Smart cast的改进"></a>Smart cast的改进</h2><p>Smart cast现在能用在<a href="https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FKT-4565" target="_blank" rel="external">subjects of safe casts</a>了：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">foo</span><span class="params">(x: <span class="type">Foo</span>?)</span></span> &#123;</div><div class="line">  <span class="keyword">val</span> b = (x <span class="keyword">as</span>? SubClass)?.subclassMethod1()</div><div class="line">  <span class="keyword">if</span> (b != <span class="literal">null</span>) &#123;</div><div class="line">    x.subclassMethod2() <span class="comment">// x is smart cast to SubClass</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>另外，以前只允许在lambda之前修改的的<code>var</code>变量<a href="https://youtrack.jetbrains.com/issue/KT-14486" target="_blank" rel="external">现在能</a>在其中执行Smart cast了：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x: String? = <span class="literal">null</span></div><div class="line"><span class="keyword">if</span> (flag) x = <span class="string">"Yahoo!"</span></div><div class="line"> </div><div class="line">run &#123;</div><div class="line">  <span class="keyword">if</span> (x != <span class="literal">null</span>) &#123;</div><div class="line">    println(x.length) <span class="comment">// x is smart cast to String</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="枚举中的嵌套类"><a href="#枚举中的嵌套类" class="headerlink" title="枚举中的嵌套类"></a>枚举中的嵌套类</h2><p>枚举内的嵌套类现在已经被<a href="https://youtrack.jetbrains.com/issue/KT-16310" target="_blank" rel="external">弃用</a>；解决方案为将class标记为inner。</p>
+<h1 id="标准库"><a href="#标准库" class="headerlink" title="标准库"></a>标准库</h1><h2 id="分包的兼容性"><a href="#分包的兼容性" class="headerlink" title="分包的兼容性"></a>分包的兼容性</h2><p>Kotlin标准库现在完全兼容Java 9的模块系统，Java 9禁止分包（多个jar文件在同一个包中声明类）。为了支持分包，我们创建了新的<code>kotlin-stdlib-jdk7</code>和<code>kotlin-stdlib-jdk8</code>，取代了旧的<code>kotlin-stdlib-jre7</code>和<code>kotlin-stdlib-jre8</code>。其中的声明在kotlin的同名包下是可见的，但是由于我们对编译器添加了黑魔法，这在Java的不同名包下也是可见的。因此，这种切换不需要对源代码进行任何更改。</p>
+<p>为确保与新模块系统的兼容性，我们做出的另一个改动是从<code>kotlin-reflect</code>库中移除<code>kotlin.reflect</code>包中已经弃用的声明。这些声明需要在<code>kotlin.reflect.full</code>包中使用，这在Kotlin 1.1中就已经支持了。</p>
+<h2 id="kotlin-math"><a href="#kotlin-math" class="headerlink" title="kotlin.math"></a>kotlin.math</h2><p><code>kotlin.math</code>是Kotlin 1.2标准库中的一个新包，允许您在跨平台代码中执行数学运算。在1.2-Beta中，我们对它进行了一些改进：</p>
+<ul>
+<li>现在支持反双曲函数（asinh，acosh，atanh）</li>
+<li>在<a href="https://blog.jetbrains.com/kotlin/2017/08/kotlin-1-2-m2-is-out/" target="_blank" rel="external">1.2-M2</a>中添加的浮点数二进制表示（toBits，nextUp等）相关的函数现在可用于JavaScript</li>
+<li>对JavaScript中polyfills精确度的改进</li>
+</ul>
+<h1 id="发布前的注意事项"><a href="#发布前的注意事项" class="headerlink" title="发布前的注意事项"></a>发布前的注意事项</h1><p><em>与其他里程碑版本一样，我们对新语言和库的相关功能<strong>不保证向后兼容性</strong>。在1.2的里程碑版本中引入的任何内容在1.2终版之前<strong>可能会发生变化</strong>。一旦RC版确定，在此之前版本的编译文件将被编译器清理，你需要重新编译1.2-Mx或1.2-Beta所编译过的文件。</em></p>
+<p><em>但是，这不会影响由1.1.x和之前release版本编译的代码。</em></p>
+<h1 id="如何更新"><a href="#如何更新" class="headerlink" title="如何更新"></a>如何更新</h1><p><strong>通过Maven / Gradle</strong>：在构建脚本和项目仓库中添加<code>http://dl.bintray.com/kotlin/kotlin-eap-1.2</code>；使用<code>1.2.0-beta-31</code>作为编译器插件和标准库的版本号。</p>
+<p><strong>通过IntelliJ IDEA</strong>：<em>工具→Kotlin→配置Kotlin插件更新</em>，在更新下拉列表中选择“Early Access Preview 1.2”，然后点击<em>检查更新</em>。命令行编译器可以从<a href="https://github.com/JetBrains/kotlin/releases/tag/v1.2-beta" target="_blank" rel="external">GitHub release page</a>下载。</p>
+<p><strong>通过<a href="https://try.kotlinlang.org/" target="_blank" rel="external">try.kotlinlang.org</a></strong>：使用右下角的下拉列表将编译器版本更改为1.2（即将实现）。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/kotlin/" rel="tag"># kotlin</a>
+          
+            <a href="/tags/翻译/" rel="tag"># 翻译</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/10/(译)Kotlin 1.2 M2 is out/" rel="next" title="(译)Kotlin 1.2 M2 is out">
+                <i class="fa fa-chevron-left"></i> (译)Kotlin 1.2 M2 is out
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/13/小南瓜鸡蛋杯宣传视频/" rel="prev" title="小南瓜鸡蛋杯宣传视频">
+                小南瓜鸡蛋杯宣传视频 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">SuiMa_黃志強</p>
+              <p class="site-description motion-element" itemprop="description">全栈产品经理</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#跨平台项目"><span class="nav-number">1.</span> <span class="nav-text">跨平台项目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语言和编译器"><span class="nav-number">2.</span> <span class="nav-text">语言和编译器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注释中的数组字面值"><span class="nav-number">2.1.</span> <span class="nav-text">注释中的数组字面值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lateinit改进"><span class="nav-number">2.2.</span> <span class="nav-text">lateinit改进</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定方法引用的改进"><span class="nav-number">2.3.</span> <span class="nav-text">绑定方法引用的改进</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类型推断的改进"><span class="nav-number">2.4.</span> <span class="nav-text">类型推断的改进</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#警告视为错误"><span class="nav-number">2.5.</span> <span class="nav-text">警告视为错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Smart-cast的改进"><span class="nav-number">2.6.</span> <span class="nav-text">Smart cast的改进</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#枚举中的嵌套类"><span class="nav-number">2.7.</span> <span class="nav-text">枚举中的嵌套类</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标准库"><span class="nav-number">3.</span> <span class="nav-text">标准库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分包的兼容性"><span class="nav-number">3.1.</span> <span class="nav-text">分包的兼容性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kotlin-math"><span class="nav-number">3.2.</span> <span class="nav-text">kotlin.math</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#发布前的注意事项"><span class="nav-number">4.</span> <span class="nav-text">发布前的注意事项</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何更新"><span class="nav-number">5.</span> <span class="nav-text">如何更新</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SuiMa_黃志強</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

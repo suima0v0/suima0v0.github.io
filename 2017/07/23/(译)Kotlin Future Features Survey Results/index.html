@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="kotlin,翻译," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Suima's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="译者：团子吃蛋挞&amp;amp;黄志强源地址：https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/  最近令人激动的事情层出不穷，我们不得不怀着抱歉的心情推迟公布Future Features Survey的结果。但迟到总比不到要好，本博客总结了我们在调查中获知的内容。 总的来说，Future">
+<meta name="keywords" content="kotlin,翻译">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(译)Kotlin Future Features Survey Results">
+<meta property="og:url" content="http://yoursite.com/2017/07/23/(译)Kotlin Future Features Survey Results/index.html">
+<meta property="og:site_name" content="Suima&#39;s Blog">
+<meta property="og:description" content="译者：团子吃蛋挞&amp;amp;黄志强源地址：https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/  最近令人激动的事情层出不穷，我们不得不怀着抱歉的心情推迟公布Future Features Survey的结果。但迟到总比不到要好，本博客总结了我们在调查中获知的内容。 总的来说，Future">
+<meta property="og:updated_time" content="2018-01-13T09:57:25.640Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(译)Kotlin Future Features Survey Results">
+<meta name="twitter:description" content="译者：团子吃蛋挞&amp;amp;黄志强源地址：https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/  最近令人激动的事情层出不穷，我们不得不怀着抱歉的心情推迟公布Future Features Survey的结果。但迟到总比不到要好，本博客总结了我们在调查中获知的内容。 总的来说，Future">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/07/23/(译)Kotlin Future Features Survey Results/"/>
+
+
+
+
+
+  <title>(译)Kotlin Future Features Survey Results | Suima's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Suima's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/23/(译)Kotlin Future Features Survey Results/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SuiMa_黃志強">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Suima's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">(译)Kotlin Future Features Survey Results</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-23T00:00:00+08:00">
+                2017-07-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/kotlin/" itemprop="url" rel="index">
+                    <span itemprop="name">kotlin</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>译者：<a href="https://pye52.github.io/" target="_blank" rel="external">团子吃蛋挞</a>&amp;<a href="https://suima0v0.github.io" target="_blank" rel="external">黄志强</a><br>源地址：<a href="https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/" target="_blank" rel="external">https://blog.jetbrains.com/kotlin/2017/06/kotlin-future-features-survey-results/</a></p>
+</blockquote>
+<p>最近令人激动的事情层出不穷，我们不得不怀着抱歉的心情推迟公布Future Features Survey的结果。但迟到总比不到要好，本博客总结了我们在调查中获知的内容。</p>
+<p>总的来说，<a href="https://blog.jetbrains.com/kotlin/2017/04/kotlin-1-1-event-report/" target="_blank" rel="external">Future Features Survey</a>从四月份开始，一共收到约850份答复。在此我们要感谢所有参与者！</p>
+<h1 id="调查结果"><a href="#调查结果" class="headerlink" title="调查结果"></a>调查结果</h1><p>原始的统计数据（匿名）可在<a href="https://docs.google.com/spreadsheets/d/1eyhyrJPsNWrM6dYqchQzjNs41AQKjz9Xb_WB-zdy8To/edit" target="_blank" rel="external">这里</a>获得。</p>
+<p>我们的议题有二：</p>
+<ul>
+<li><p>提名三个最受你期待的特性</p>
+</li>
+<li><p>提出一项你认为不需要的特性（可选）</p>
+<a id="more"></a>
+</li>
+</ul>
+<p>你可以在<a href="https://drive.google.com/file/d/0BwAovUlww0CmVmNQTXd4TTdKYUU/view" target="_blank" rel="external">这里</a>查看提名features的名单。</p>
+<p>我们总共收到852份答复（某些是白卷），其中大多数人都用完了3个实用特性的提名名额，而约有300多人放弃了对不受欢迎特性的提名。</p>
+<p>这是汇总的结果（按受欢迎程度排名）：</p>
+
+<p><iframe frameborder="0" height="637" scrolling="no" seamless src="https://docs.google.com/spreadsheets/d/1eyhyrJPsNWrM6dYqchQzjNs41AQKjz9Xb_WB-zdy8To/pubchart?oid=2077021838&amp;format=interactive" width="790"></iframe></p>
+
+
+<p><span id="more-5025"></span></p>
+
+<p>由上图可知，最受欢迎特性的依次为：“Collection literals”, “SAM conversions for Kotlin interfaces”与“Truly immutable data”</p>
+<p>而“Private members accessible from tests”似乎最具争议，108票赞同与120票反对。这可以理解，毕竟可测试性设计是被广泛认可的惯例。</p>
+<p>但我对“Overloadable operators | and &amp;”的提名结果感到些许困惑，有46票赞成与50票反对，而我看不出这个特性所带来的任何坏处，请在文章评论区分享你这样选择的原因。</p>
+<p>这是最不受欢迎特性的排名：</p>
+
+<p><iframe frameborder="0" height="483.5" scrolling="no" seamless src="https://docs.google.com/spreadsheets/d/1eyhyrJPsNWrM6dYqchQzjNs41AQKjz9Xb_WB-zdy8To/pubchart?oid=346107453&amp;format=interactive" width="933"></iframe></p>
+
+<p>需要说明的是，“Optional commas”和“Optional trailing commas”本应是两个选项，我们错误地把他们放在了同一个feature中，所以引起了难以解读的结果。</p>
+<p>另外我们还忘了在调查中添加“Ternary conditional operator”，在我意识到的时候已经太晚了，很抱歉各位。我们已经明白这个功能会有很大需求，会持续进行研究的。</p>
+<p>但最奇怪的是，这次调查的结果与在Kotlin 1.1发布会中进行的调查截然不同：</p>
+
+<p><iframe frameborder="0" height="580" scrolling="no" seamless src="https://docs.google.com/spreadsheets/d/1gR1C69Rcmv2szbQJ-mXrhW7KtU4tPSya93Xq9sfE8Y0/pubchart?oid=2043595044&amp;format=interactive" width="1034"></iframe></p>
+
+<p>我怀疑是人们看了上次投票后产生了某些偏见，但这很难确定，也可能是另外的因素，例如线下与线上的参与者本身就具有很大的差异性。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>已明确方向的三个特性是：</p>
+<ul>
+<li>Collection literals</li>
+<li>SAM conversions for Kotlin interfaces</li>
+<li>Truly immutable data</li>
+</ul>
+<p>相比之下其余的features只收到了较少的投票。Truly immutable data饱受期待，但真的很难实现，这里我们没法给予承诺。而另外两项在不久的将来都可以实现，multi-catch看起来也不错。总而言之，我们将在工作计划中重视这次调查的结果。</p>
+<p>免责声明：如上所述，我们并没有承诺在特定的时间内完成任何这些功能。我们很关心用户需要什么，但不能预先承诺任何东西。因为在知道这些功能是否确切（并且优雅地）适合这种语言之前，我们都需要进行慎重的设计工作。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/kotlin/" rel="tag"># kotlin</a>
+          
+            <a href="/tags/翻译/" rel="tag"># 翻译</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/16/夏の音：ギタとひぐらしと少女のうた/" rel="next" title="夏の音：ギタとひぐらしと少女のうた">
+                <i class="fa fa-chevron-left"></i> 夏の音：ギタとひぐらしと少女のうた
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/24/(译)KotlinConf - Speaker List Announced/" rel="prev" title="(译)KotlinConf – Speaker List Announced">
+                (译)KotlinConf – Speaker List Announced <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">SuiMa_黃志強</p>
+              <p class="site-description motion-element" itemprop="description">全栈产品经理</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#调查结果"><span class="nav-number">1.</span> <span class="nav-text">调查结果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结论"><span class="nav-number">2.</span> <span class="nav-text">结论</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SuiMa_黃志強</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
