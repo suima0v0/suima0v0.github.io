@@ -872,7 +872,7 @@
           repo: 'gitalk',
           owner: 'suima0v0',
           admin: ['suima0v0'],
-          id: location.pathname,
+          id: md5(window.location.pathname),
           distractionFreeMode: ''
         })
         gitalk.render('gitalk-container')           
