@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #93ffff;
+  background: #be18ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2362,6 +2362,34 @@ pre .javascript .function {
 }
 .gt-container .gt-popup .gt-action.is--active:before {
   top: 0.7em;
+}
+.gt-container a {
+  color: #555 !important;
+}
+.gt-container a:hover {
+  color: #222 !important;
+  border-color: #222 !important;
+}
+.gt-container .gt-btn {
+  border: 1px solid #555 !important;
+  background-color: #555 !important;
+}
+.gt-container .gt-btn:hover {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+.gt-container .gt-btn-public:hover {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+.gt-container .gt-svg svg {
+  fill: #555 !important;
+}
+.gt-container .gt-link {
+  border-bottom: #555 !important;
+}
+.gt-container .gt-link:hover {
+  border-bottom: #222 !important;
 }
 .page-archive .archive-page-counter {
   position: relative;
