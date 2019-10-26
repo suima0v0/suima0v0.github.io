@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #eb3cff;
+  background: #b611ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2396,6 +2396,12 @@ pre .javascript .function {
 }
 .gt-container .gt-btn-preview:hover {
   color: #fff !important;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  background: #222 !important;
+}
+.gt-container .gt-comment-admin .gt-comment-content {
+  background-color: #f6f8fa;
 }
 .page-archive .archive-page-counter {
   position: relative;
