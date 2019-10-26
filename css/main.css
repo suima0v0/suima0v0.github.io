@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #be18ff;
+  background: #eb3cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2386,10 +2386,16 @@ pre .javascript .function {
   fill: #555 !important;
 }
 .gt-container .gt-link {
-  border-bottom: #555 !important;
+  border-bottom: 1px dotted #555 !important;
 }
 .gt-container .gt-link:hover {
-  border-bottom: #222 !important;
+  border-bottom: 1px dotted #222 !important;
+}
+.gt-container .gt-btn-preview {
+  color: #fff !important;
+}
+.gt-container .gt-btn-preview:hover {
+  color: #fff !important;
 }
 .page-archive .archive-page-counter {
   position: relative;
